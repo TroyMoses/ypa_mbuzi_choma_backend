@@ -16,6 +16,7 @@ def submit_review(request: ReviewCreate, db: Session = Depends(get_db)):
         customer_email=request.customer_email,
         rating=request.rating,
         comment=request.comment,
+        menu_id=request.menu_id,
     )
     db.add(new_review)
     db.commit()

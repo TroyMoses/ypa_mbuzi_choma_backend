@@ -124,6 +124,7 @@ class ReviewCreate(BaseModel):
     customer_email: EmailStr
     rating: int
     comment: str
+    menu_id: int
 
 
 class ReviewResponse(BaseModel):
@@ -132,6 +133,7 @@ class ReviewResponse(BaseModel):
     customer_email: EmailStr
     rating: int
     comment: str | None
+    menu_id: int
     created_at: datetime
 
     class Config:

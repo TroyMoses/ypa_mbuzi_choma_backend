@@ -77,4 +77,5 @@ class Review(Base):
     customer_email: Mapped[str] = mapped_column(String(100), nullable=False)
     rating: Mapped[int] = mapped_column(nullable=False)
     comment: Mapped[str] = mapped_column(String(1000), nullable=True)
+    menu_id: Mapped[int] = mapped_column(nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=nairobi_now)
