@@ -1,0 +1,13 @@
+- python3 -m venv venv
+- activate your environment in windows....
+- pip install -r requirements.txt
+- fastapi dev main.py
+- pip freeze > requirements.txt
+- Changing models
+- alembic init alembic
+- alembic revision --autogenerate -m "Initial migration"
+- alembic upgrade head
+- git checkout -b dev        # Create and switch to 'dev' branch (if not already on it)
+- git add .                  # Stage all changes
+- git commit -m "Initial commit on dev branch"
+- git push origin dev        # Push to GitHub on 'dev' branch
